@@ -1,0 +1,11 @@
+https://naya.com.np/post/5d1cc8869aefeb8a70571c4fe977fa5f
+
+<a rel="" href="http://naya.com.np" title="" id="trig" class="naya_convert"></a>
+<textarea class="form-control" rows="10" cols="20"></textarea>
+
+<script src="js/naya-nepali.js"></script>
+
+.naya_convert
+{
+    display: none;
+}
