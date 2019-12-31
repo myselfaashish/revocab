@@ -9,3 +9,7 @@ https://naya.com.np/post/5d1cc8869aefeb8a70571c4fe977fa5f
 {
     display: none;
 }
+
+
+npm install 
+npm run dev
