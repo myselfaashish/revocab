@@ -1,0 +1,34 @@
+Needs to implement:
+
+WORDS
+id PK
+name String 255
+meaning String HTML EDITOR
+synonyms String
+mnemonics [OWN IDEA TO REMEMBER WORD] String
+nepali_meaning  String 255
+sentences String
+root_word String
+extras [if any] String
+
+
+WRITING
+id
+question String
+ideas String
+answer String [HTML EDITOR]
+response String [HTML EDITOR]
+marks [GIVEN BY INSTRUCTOR] int
+created_at
+updated_at
+
+MATHEMATICS_FORMULA
+id
+formula [PICTURE]
+extras [HTML EDITOR]
+
+
+MATHEMATICS
+id
+question
+solution
