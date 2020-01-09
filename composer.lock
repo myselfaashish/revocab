@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92095327b9af0c90f8245c5d6a659ab4",
+    "content-hash": "604c647ae9ef22fbc4370caea8868917",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1428,6 +1428,57 @@
                 "uuid"
             ],
             "time": "2019-12-17T08:18:51+00:00"
+        },
+        {
+            "name": "rofilde/laravel-ckeditor",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rofil/laravel-ckeditor.git",
+                "reference": "f9bed5875ad22d345455292662062f28bc8392ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rofil/laravel-ckeditor/zipball/f9bed5875ad22d345455292662062f28bc8392ba",
+                "reference": "f9bed5875ad22d345455292662062f28bc8392ba",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Rofilde\\Ckeditor\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+",
+                "LGPL-2.1+",
+                "MPL-1.1+"
+            ],
+            "authors": [
+                {
+                    "name": "CKSource",
+                    "homepage": "http://cksource.com"
+                },
+                {
+                    "name": "UniSharp Ltd. (Composer Package Maintainer)",
+                    "homepage": "http://www.unisharp.com"
+                }
+            ],
+            "description": "JavaScript WYSIWYG web text editor (for laravel).",
+            "homepage": "http://ckeditor.com",
+            "keywords": [
+                "CKEditor",
+                "editor",
+                "fckeditor",
+                "html",
+                "javascript",
+                "laravel",
+                "richtext",
+                "text",
+                "wysiwyg"
+            ],
+            "time": "2016-01-12T06:30:49+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
