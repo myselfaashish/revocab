@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Word extends Model
 {
     protected $fillable = [
+        'user_id',
         'name',
         'meaning',
         'synonyms',

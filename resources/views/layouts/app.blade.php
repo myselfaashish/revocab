@@ -76,6 +76,82 @@
             @yield('content')
         </main>
     </div>
+    <script src="tinymce/tinymce.min.js"></script>
+    <script src="js/naya-nepali.js"></script>
+    <script type="text/javascript">
+        tinymce.init({
+            /* replace textarea having class .tinymce with tinymce editor */
+            selector: '.tinymce',
+            relative_urls: false,
+            remove_script_host : false,
+            image_caption: true,
 
+            /* theme of the editor */
+            theme: "modern",
+            skin: "lightgray",
+
+            /* width and height of the editor */
+            width: "100%",
+            height: 150,
+            /* display statusbar */
+            statubar: true,
+            content_style: ".mce-content-body {font-size:16px;}",
+
+            /* plugin */
+            plugins: [
+                "advlist autolink link image lists charmap print preview hr anchor pagebreak",
+                "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+                "save table contextmenu directionality emoticons imagetools template paste textcolor"
+            ],
+
+            /* toolbar */
+            toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons",
+
+            /* style */
+            style_formats: [
+
+                {title: "Headers", items: [
+                {title: "Header 1", format: "h1"},
+                {title: "Header 2", format: "h2"},
+                {title: "Header 3", format: "h3"},
+                {title: "Header 4", format: "h4"},
+                {title: "Header 5", format: "h5"},
+                {title: "Header 6", format: "h6"}
+                ]},
+                {title: "Inline", items: [
+                {title: "Bold", icon: "bold", format: "bold"},
+                {title: "Italic", icon: "italic", format: "italic"},
+                {title: "Underline", icon: "underline", format: "underline"},
+                {title: "Strikethrough", icon: "strikethrough", format: "strikethrough"},
+                {title: "Superscript", icon: "superscript", format: "superscript"},
+                {title: "Subscript", icon: "subscript", format: "subscript"},
+                {title: "Code", icon: "code", format: "code"}
+                ]},
+                {title: "Blocks", items: [
+                {title: "Paragraph", format: "p"},
+                {title: "Blockquote", format: "blockquote"},
+                {title: "Div", format: "div"},
+                {title: "Pre", format: "pre"}
+                ]},
+                {
+                title: 'Image Left',
+                selector: 'img',
+                styles: {
+                    'float': 'left',
+                    'margin': '0 10px 0 10px'
+                }
+            },
+            {
+                title: 'Image Right',
+                selector: 'img',
+                styles: {
+                    'float': 'right',
+                    'margin': '0 10px 0 10px'
+                }
+            }
+            ],
+        
+        });
+  </script>
 </body>
 </html>

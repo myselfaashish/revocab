@@ -24,6 +24,7 @@ class WordsController extends Controller
 
     public function store(Request $request)
     {
+        $request['user_id'] = \Auth::id();
         $word = Word::create($request->all());
         return array('message' => 'success', 'data' => $word);
     }
