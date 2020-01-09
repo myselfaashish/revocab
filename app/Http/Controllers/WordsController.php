@@ -26,7 +26,8 @@ class WordsController extends Controller
     {
         $request['user_id'] = \Auth::id();
         $word = Word::create($request->all());
-        return array('message' => 'success', 'data' => $word);
+        \Session::put('success', 'Successfully added vocabulary in your list.');
+        return \Redirect::route('home', array('message' => 'success', 'data' => $word));
     }
 
     public function show($id)

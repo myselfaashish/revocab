@@ -5,12 +5,18 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Add Vocabulary</div>
 
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
+                        </div>
+                    @endif
+
+                    @if (session('success'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('success') }}
                         </div>
                     @endif
 
@@ -48,7 +54,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="sentences" class="col-sm-2 col-form-label">Meaning</label>
+                            <label for="sentences" class="col-sm-2 col-form-label">Sentences</label>
                             <div class="col-sm-10">
                                 <textarea name="sentences" class="tinymce"></textarea>
                             </div>
