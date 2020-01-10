@@ -3,9 +3,9 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-sm-12">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-sm-12">
                     <div class="row space-16">&nbsp;</div>
                     <div class="row">
                         <div class="col-sm-12">
@@ -17,48 +17,49 @@
                                             style="width:72px;height:72px;" />
                                     </div>
                                     <br>
-                                    <h4 id="thumbnail-label"><b>NAME HERE</b></h4>
-                                    <p>
-                                            <b><i>MEANING (if any)</i></b>
-                                    </p>
-                                    <b>
-                                            NEPALI MEANING (if any)
-                                    </b>
-                                    <p>
-                                            Synonyms (if any)
-                                    </p>
-                                    <div class="thumbnail-description smaller">
-                                        <b>SENTENCES</b>
-                                        <ul>
-                                            <p>Lorem Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                            <p>Lorem Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                            <p>Lorem Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        </ul>
+                                    <h4 id="thumbnail-label"><b>{{ $random_word->name }}</b></h4>
+                                    <div style="padding: 10px;">
+                                        <p>
+                                            <b><i>{!! $random_word->meaning !!}</i></b>
+                                        </p>
                                     </div>
+                                    <br><br>
+                                    <div>
+                                        <b style="color: red">
+                                            {{ $random_word->nepali_meaning }}
+                                        </b>
+                                    </div>
+                                    <br>
+                                    <p>
+                                        <b>Synonyms:</b>  {{ $random_word->synonyms }}
+                                    </p>
+                                    <div style="padding: 10px;" class="thumbnail-description smaller">
+                                        <b>SENTENCES</b><br>
+                                        {!! $random_word->sentences !!}
+                                    </div>
+                                    <br>
 
                                     <div class="thumbnail-description smaller">
-                                        <b>EXTRAS (if any)</b>
-                                        <ul>
-                                            <p>Lorem Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                            <p>Lorem Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                            <p>Lorem Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        </ul>
+                                        <b>EXTRAS (if any)</b><br>
+                                        {!! $random_word->extras !!}
                                     </div>
+                                    <br>
                                 </div>
                                 <div class="caption card-footer text-center">
                                     <ul class="list-inline">
-                                        <li><i class="people lighter"></i>&nbsp;MNEMONICS</li>
-                                        <li><i class="people lighter"></i>&nbsp;ROOT WORD</li>
+                                        <li><i class="people lighter"></i>&nbsp;<b>MNEMONICS:</b> {{ $random_word->mnemonics }}</li>
+                                        <li><i class="people lighter"></i>&nbsp;<b>ROOT WORD:</b> {{ $random_word->root_word }}</li>
 
                                         <li></li>
+                                        <br>
                                         <li><i class="glyphicon glyphicon-envelope lighter"></i><a
-                                                href="#">&nbsp;Help</a></li>
+                                                href="{{route('words.list')}}">&nbsp;<button class="btn btn-danger">NEXT</button></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2">&nbsp;</div>
+                    <div class="col-sm-2">&nbsp;</div>
                 </div>
             </div>
         </div>

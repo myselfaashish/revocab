@@ -62,13 +62,13 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="rootword" class="col-sm-2 col-form-label">Mnemonics</label>
+                            <label for="rootword" class="col-sm-2 col-form-label">Root Word</label>
                             <div class="col-sm-10">
                                 <input name="root_word" class="form-control" id="" placeholder="Root Word (if any)">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="extras" class="col-sm-2 col-form-label">Extras (if any)</label>
+                            <label for="extras" class="col-sm-2 col-form-label">Extras</label>
                             <div class="col-sm-10">
                                 <textarea name="extras" class="tinymce"></textarea>
                             </div>
