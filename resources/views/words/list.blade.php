@@ -24,7 +24,7 @@
                                         </p>
                                     </div>
                                     <br><br>
-                                    <div>
+                                    <div style="padding: 10px;">
                                         <b style="color: red">
                                             {{ $random_word->nepali_meaning }}
                                         </b>
@@ -39,13 +39,13 @@
                                     </div>
                                     <br>
 
-                                    <div class="thumbnail-description smaller">
+                                    <div style="padding: 10px;" class="thumbnail-description smaller">
                                         <b>EXTRAS (if any)</b><br>
                                         {!! $random_word->extras !!}
                                     </div>
                                     <br>
                                 </div>
-                                <div class="caption card-footer text-center">
+                                <div style="padding: 10px;" class="caption card-footer text-center">
                                     <ul class="list-inline">
                                         <li><i class="people lighter"></i>&nbsp;<b>MNEMONICS:</b> {{ $random_word->mnemonics }}</li>
                                         <li><i class="people lighter"></i>&nbsp;<b>ROOT WORD:</b> {{ $random_word->root_word }}</li>
