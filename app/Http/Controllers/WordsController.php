@@ -49,4 +49,8 @@ class WordsController extends Controller
     {
         //
     }
+
+    public function words_list() {
+        return view('words.list');
+    }
 }

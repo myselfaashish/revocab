@@ -9,16 +9,16 @@
 
                 <div class="card-body">
                     @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
                     @endif
 
                     @if (session('success'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('success') }}
-                        </div>
-                        {{ \Session::forget('success') }}
+                    <div class="alert alert-success" role="alert">
+                        {{ session('success') }}
+                    </div>
+                    {{ \Session::forget('success') }}
                     @endif
 
                     <form action="{{ route('word.store') }}" method="POST">
@@ -26,7 +26,7 @@
                         <div class="form-group row">
                             <label for="wordname" class="col-sm-2 col-form-label">Word Name</label>
                             <div class="col-sm-10">
-                            <input type="text" name="name" class="form-control" id="" placeholder="Word Name">
+                                <input type="text" name="name" class="form-control" id="" placeholder="Word Name">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -51,7 +51,8 @@
                             <label for="mnemonics" class="col-sm-2 col-form-label">Nepali Meaning</label>
                             <div class="col-sm-10">
                                 <a rel="" href="http://naya.com.np" title="" id="trig" class="naya_convert"></a>
-                                <textarea type="text" class="form-control" rows="10" cols="20" name="nepali_meaning"></textarea>
+                                <textarea type="text" class="form-control" rows="10" cols="20"
+                                    name="nepali_meaning"></textarea>
                             </div>
                         </div>
                         <div class="form-group row">

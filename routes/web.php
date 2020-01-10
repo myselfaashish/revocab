@@ -21,4 +21,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('home', 'HomeController@index')->name('home');
     Route::get('words', 'WordsController@index')->name('word.index');
     Route::post('words', 'WordsController@store')->name('word.store');
+
+    Route::get('words_list', 'WordsController@words_list')->name('words.list');
 });

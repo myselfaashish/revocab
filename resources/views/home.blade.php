@@ -6,7 +6,6 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Welcome to REVOCAB</div>
-
                 <div class="card-body">
                     <h2>What would you like to do ?</h2>
                     <br>
@@ -23,6 +22,24 @@
                             <a href="#">
                                 <div class="card">
                                     <div class="card-header text-center">WRITE AND REVIEW TODAY</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <a href="{{route('words.list')}}">
+                                <div class="card">
+                                    <div class="card-header text-center">WORD LISTS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="spacer col-sm-2"></div>
+                        <div class="col-sm-5">
+                            <a href="#">
+                                <div class="card">
+                                    <div class="card-header text-center">LOREM IPSUM</div>
                                 </div>
                             </a>
                         </div>
