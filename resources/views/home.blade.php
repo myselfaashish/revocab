@@ -21,17 +21,17 @@
                         <div class="col-sm-5">
                             <a href="#">
                                 <div class="card">
-                                    <div class="card-header text-center">WRITE AND REVIEW TODAY</div>
+                                    <div class="card-header text-center">EDIT WORDS</div>
                                 </div>
                             </a>
                         </div>
                     </div>
-
+                    <br>
                     <div class="row">
                         <div class="col-sm-5">
-                            <a href="{{route('words.list')}}">
+                            <a href="{{route('words.cards')}}">
                                 <div class="card">
-                                    <div class="card-header text-center">WORD LISTS</div>
+                                    <div class="card-header text-center">WORD CARDS</div>
                                 </div>
                             </a>
                         </div>

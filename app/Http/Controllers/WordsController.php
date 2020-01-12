@@ -52,6 +52,6 @@ class WordsController extends Controller
 
     public function words_list() {
         $random_word = Word::where('user_id', \Auth::id())->inRandomOrder()->first();
-        return view('words.list', compact('random_word'));
+        return view('words.cards', compact('random_word'));
     }
 }
